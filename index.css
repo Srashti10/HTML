@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    color: black;
+    background-color: aliceblue;
+    text-align: center;
+}
+p{
+    color: black;
+    background-color: red;
+    
+}
