@@ -1,0 +1,17 @@
+.recipehead{
+    background-color: black;
+    color: white;
+    height: 50px;
+    text-align: center;
+}
+
+.recipevideos{
+    display:flexbox;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe{
+    display: inline-flex;
+   
+}
