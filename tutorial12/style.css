@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+    padding: 0px
+}
+
+nav {
+    background-color: rgb(122, 119, 114);
+    height: 50px
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    list-style-type: none;
+}
+
+li {
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    font-weight: bolder;
+
+}
+
+a:hover {
+    color: aliceblue;
+}
+
+main {
+    height: 570px;
+    background-image: url("bgimg.jpeg");
+    background-position: right;
+ 
+}
+
+h1 {
+    margin: 0px;
+    padding-top: 180px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 80px;
+    font-weight: bolder;
+    animation-name: example;
+    animation-duration: 3s;
+    
+}
+   
+
+footer {
+    background-color: black;
+    color: beige;
+    text-align: center;
+    height: 22px;
+}
