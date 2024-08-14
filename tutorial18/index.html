@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+        }
+        .box1{
+            color: yellow;
+            padding: 10px;
+            margin: 35px;
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box;  
+            /* If we give this border box property it means the height of the box will include padding and border 
+            In this case the height of box 1 including padding and border will be 200px, because we give border-box property.*/
+        }
+        .box2{
+            color: red;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;  
+        }
+    </style>
+</head>
+<body>
+    <!-- The total height or width of any element will include margin, padding, border and content. -->
+    <!-- total width = left margin + right margin + left boder + right border + left padding + right padding -->
+    <!-- total height = upper margin + lower margin + upper border + lower border + upper padding + lower padding -->
+    <!-- Margin Collapse : If the margin of the two elemnts collapse, then the maximum margin from the two elements will apply 
+    only once between both elements, not both the margins will apply. -->
+
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box box2">
+        I am another box
+    </div>
+</body>
+</html>
