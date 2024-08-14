@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts and Text Properties</title>
+    <style>
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
+                Geneva, Verdana, sans-serif;
+            text-transform: capitalize;  /* It will capitalize the first letter of each word*/
+            text-transform: uppercase;  /* It will transform each word in upper case.*/
+            text-decoration-color: rgb(51, 129, 129);
+            text-decoration-style: dotted;
+        }
+
+        h2{
+            text-transform: capitalize;  /* It will capitalize the first letter of each word*/
+            text-transform: uppercase;  /* It will transform each word in upper case.*/
+            text-decoration-color: rgb(51, 129, 129);
+            text-decoration-style: dotted;
+            text-indent: 45px;  /*It will give an indent to the text.*/
+            text-align: center;
+        }
+
+        .lorem{
+            border: 2px solid red;
+            width: 45px;
+            text-overflow: ellipsis;
+            text-overflow: clip;
+            overflow: hidden;
+            word-break: break-all;
+        }
+
+        p {
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            font-family: Baloo Bhaijaan 2, sans-serif;
+            font-style: oblique;
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 25px;
+            line-height: 2;  /*It gives the space between the lines */
+            letter-spacing: 2px;  /* It gives the space between the letters. */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Fonts</h1>
+        <h2>about fonts</h2>
+        <p>This is a video on fonts.</p>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quidem fuga earum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum esse nesciunt possimus quam eum illum
+            dignissimos reiciendis, voluptatem est rerum sapiente repudiandae? Architecto laboriosam perspiciatis id
+            fugit ratione accusantium reiciendis quibusdam ipsam deserunt sunt quisquam nisi deleniti, soluta
+            voluptatibus distinctio fugiat omnis in quas obcaecati.</p>
+    </div>
+</body>
+
+</html>
