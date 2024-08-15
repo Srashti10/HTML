@@ -11,26 +11,43 @@
     h1 {
         color: aqua;
     }
-     /* The specificity of this selector is 10. */
+
+    /* The specificity of this selector is 10. */
     .yellow {
         color: yellow;
     }
-     /* The specificity of this selector is 10. */
+
+    /* The specificity of this selector is 10. */
     .cred {
         color: red;
     }
-     /* The specificity of this selector is 10. */
+
+    /* The specificity of this selector is 10. */
     .cpurple {
         color: purple;
     }
+    /* Complex Selector  */
+    /* The specificity of this selector is (1+10 = 11) */
+    h1.yellow{
+        color: chartreuse;
+    }
+
     /* Attribute Selector */
-     /* The specificity of this selector is 10. */
+    /* The specificity of this selector is 10. */
     [data-x=a] {
         color: rgb(231, 136, 136);
     }
-     /* The specificity of this selector is 1. */
-    h2{
+
+    /* The specificity of this selector is 1. */
+    h2 {
         color: blue !important;
+    }
+    /* The specificity of this selector is (1+10+10+10+10 = 41) */
+    /* specificity of(a+harryclass+rohanclass+href+hover) */
+    /* href = attribute selector */
+    /* hover = pseudo class selector */
+    a.harryclass.rohan-class[href]:hover{
+        color: rgb(112, 38, 209);
     }
 </style>
 
@@ -69,8 +86,15 @@
         <li>Class selectors, attributes selectors or pseudo class - 10</li>
         <li>Id Selectors - 100</li>
         <li>Inline Selectors - 1000</li>
+        <li>Important Keyword - 10000</li>
     </ul>
-    
+    <p>For checking the specificity of any complex selector we will add all the selectors in that complex selectors.
+        <br>
+        If the selector is h1.yellow then we will add the specificity of h1 which is element an specificity of
+        yellow which is a class. So the specificity of h1.yellow will be (1+10) = 11
+    </p>
+
+
 </body>
 
 </html>
