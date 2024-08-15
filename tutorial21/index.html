@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity and Cascades</title>
+</head>
+<style>
+    /* The specificity of this selector is 1. */
+    h1 {
+        color: aqua;
+    }
+     /* The specificity of this selector is 10. */
+    .yellow {
+        color: yellow;
+    }
+     /* The specificity of this selector is 10. */
+    .cred {
+        color: red;
+    }
+     /* The specificity of this selector is 10. */
+    .cpurple {
+        color: purple;
+    }
+    /* Attribute Selector */
+     /* The specificity of this selector is 10. */
+    [data-x=a] {
+        color: rgb(231, 136, 136);
+    }
+     /* The specificity of this selector is 1. */
+    h2{
+        color: blue !important;
+    }
+</style>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">
+            CSS Specificity
+        </h1>
+    </div>
+    <h2 style="color: brown;">The Cascade Algorithm</h2>
+    The cascade algorithm in CSS is used to solve conflicts when a same Html element styled by more than one properties.
+    Here are some points of cascade algorithm:
+    <dl>
+        <dt>Position and order of the appearence:</dt>
+        <dd>If same type of selector(e.g class) is used to give different properties then the selector which is
+            at last will be considered.
+        </dd>
+        <dt>Specificity:</dt>
+        <dd>An algorithm that determines which CSS selector has the priority. Here is the order of specificity:</dd>
+        <dd>Inline Style > Id Selector > Class or attribute selector > Element Selector > Universal Selector</dd>
+        <dt>Origin:</dt>
+        <dd>The order in which CSS appears and where it comes from. There are some styles which comes from the browser.
+            These styles are coming from user-agent style sheets. So the styles which we write ourself has high priority
+            than the one applied by the browser.
+        </dd>
+        <dt>Important:</dt>
+        <dd>If we add an important keyword in any element then it has the highest priority. It will have more priority
+            than inline CSS.
+        </dd>
+    </dl>
+    <h3>Specificity Calculations:</h3>
+    <p>To calculate specificity, assign a value to each part of the selector.</p>
+    <ul>
+        <li>Universal Selector - 0</li>
+        <li>Element and pseudo element - 1</li>
+        <li>Class selectors, attributes selectors or pseudo class - 10</li>
+        <li>Id Selectors - 100</li>
+        <li>Inline Selectors - 1000</li>
+    </ul>
+    
+</body>
+
+</html>
