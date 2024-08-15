@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid black;
+            /* width: 1360px; */
+            /* vw is viewport width and vh is viewport height*/
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aquamarine;
+            box-sizing: border-box;
+
+            /* margin-auto will take both margin left and right equal */
+        }
+
+        .container {
+            border: 2px solid black;
+            /* width: 1360px; */
+            /* vw is viewport width and vh is viewport height*/
+            width: 80vw;
+            height: 80vh;
+            margin: 23px auto;
+            background-color: aquamarine;
+            box-sizing: border-box;
+            font-size: 16px;
+            
+        }
+        .container p{
+            /* It will be 2 times more than the size of the fonts of it's parent */
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        This is a box.
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magni quidem, nesciunt temporibus assumenda
+        vero eius, facere pariatur doloribus error et necessitatibus! Officiis sunt dolorum officia magni autem
+        explicabo qui at temporibus modi illum sint, accusantium nostrum. Deserunt sunt aliquam, reiciendis atque
+        eligendi vitae doloremque quia magni tempore beatae ipsum, odit, inventore eos praesentium alias nobis?
+        </p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium temporibus in delectus, tempora
+        nam repellendus expedita provident magni recusandae deserunt ipsam a modi ea voluptatibus molestiae molestias
+        facere obcaecati nemo, placeat sapiente accusamus non deleniti. Omnis, a quisquam? Minus minima quaerat sed
+        nihil aliquid, temporibus doloremque suscipit consectetur eligendi iure ipsa nemo enim rerum voluptatibus?
+    </div>
+</body>
+
+</html>
