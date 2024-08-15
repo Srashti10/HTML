@@ -29,7 +29,9 @@
             /* width: 1360px; */
             /* vw is viewport width and vh is viewport height*/
             width: 80vw;
-            height: 80vh;
+            /* Min-height will maintain a minimum height of the container, and if the content increases then it will adjust its
+            height , the content will not overflow. It will increases the height as much as needed. Same goes with min-width. */
+            min-height: 80vh;
             margin: 23px auto;
             background-color: aquamarine;
             box-sizing: border-box;
@@ -37,8 +39,32 @@
             
         }
         .container p{
-            /* It will be 2 times more than the size of the fonts of it's parent */
+            /* It will be 2 times more than the size of the font that is going to be the size of container by inherit. */
             font-size: 2em;
+            /* It will adapt 50% of the parent's width. */
+            /* If the height of the parent is not set then it will cause the problem. */
+            width: 50%;
+            border: 2px solid red;
+        }
+        .container p{
+            /* It will be 2 times of the font size of the root element. 
+            If the size of the html is 12px then it will adapt size 24px. */
+            font-size: 2rem;
+        }
+        html{
+            font-size: 12px;
+        }
+        .mycont{
+            /* background-color: red; */
+            box-sizing: border-box;
+            color: rgb(5, 5, 4);
+            font-size: 22px;
+            margin: 23px auto;
+            border: 2px solid black;
+            /* In this device height is minimum and width is more so in this case vmin will applied to width.
+            For my phone widthh is minimum so vmin is applied to height.*/
+            /* width: 100vmin; */
+            width: 80vw;
         }
     </style>
 </head>
@@ -52,11 +78,15 @@
         vero eius, facere pariatur doloribus error et necessitatibus! Officiis sunt dolorum officia magni autem
         explicabo qui at temporibus modi illum sint, accusantium nostrum. Deserunt sunt aliquam, reiciendis atque
         eligendi vitae doloremque quia magni tempore beatae ipsum, odit, inventore eos praesentium alias nobis?
+        
         </p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laudantium temporibus in delectus, tempora
         nam repellendus expedita provident magni recusandae deserunt ipsam a modi ea voluptatibus molestiae molestias
         facere obcaecati nemo, placeat sapiente accusamus non deleniti. Omnis, a quisquam? Minus minima quaerat sed
         nihil aliquid, temporibus doloremque suscipit consectetur eligendi iure ipsa nemo enim rerum voluptatibus?
+    </div>
+    <div class="mycont">
+        I am another container.
     </div>
 </body>
 
