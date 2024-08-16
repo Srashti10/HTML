@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling List using CSS</title>
+    <style>
+        nav ul li{
+            list-style: devanagari;
+            /* By default the numbering (marker) of the list will not be include in the list items when we style it. */
+            /* For including the number we will use list style position inside. */
+            list-style-position: inside;
+            background-color: yellow;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <p>We can also use image in place of numbers, in the list by using the syntax:
+        <pre>
+            list-style-image : url("linkoftheimage")
+        </pre>
+    </p>
+    <p>
+        We can also use emoji in place of numbers in list by using syntax:
+        <pre>
+            list-style-type : "emoji-here ";
+        </pre>
+    </p>
+    <p>We can use these properties together by using syntax:
+        <pre>
+            list-style: disc inside;
+            list-style: inside url("imagelink")
+        </pre>
+    </p>
+</body>
+</html>
