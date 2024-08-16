@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outlines</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 34px;
+            box-shadow: 5px 5px 15px 5px #744646 inset;
+            border-radius: 10px;
+        }
+        .text-element{
+            text-shadow: 2px 2px 4px #e63333;
+            outline: 2px solid blue;
+            /* Outline offset will set the distance between the content and the outline. */
+            outline-offset: 5px;
+            border: 2px solid red;
+            /* Radius of the outline will also change with radius of the border. Outline will follow the border. */
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        I am a box
+    </div>
+    <div>
+        <pre>
+    The syntax of giving box shadow is:
+    box-shadow: h-offset v-offset blur spread color inset;
+    1-h-offset and v-offset: Determines the shadow's horizontal and vertical position.
+    2-blur: The larger the value, the blurier the shadow.
+    3-spread: Expands or shrinks the shadow size.
+    4-color: Defines the shadow color.
+    5-inset: Makes the shadow inner.
+</pre>
+    </div>
+    <p class="text-element">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, modi! Temporibus
+    aliquam cumque vero ratione placeat assumenda illum quia accusamus libero? Illum nostrum fugit autem repudiandae
+    iure quia quasi est!
+    </p>
+    Difference between outline and border:
+    <ul>
+        <li>Outline does not count in border-boxing.</li>
+        <li>Outline will display outside the border.</li>
+        <li>We can not change the width of the outline. But we can change the width of border.</li>
+
+    </ul>
+    <p>
+
+    </p>
+</body>
+
+</html>
