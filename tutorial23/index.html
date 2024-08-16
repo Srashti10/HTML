@@ -12,14 +12,35 @@
         }
         .box {
             border: 2px solid blue;
+            /* display: inline; */
+            display: inline-block;
+            padding: 45px;
+            margin: 34px;
+            width: 344px;
+            display: flex;
+            justify-content: center;
+            /* If the display is inline, then margin-top,padding-top and width will not applied.
+            So we will use inline-block display. */
+        }
+        .box1{
+            /* Display none will remove the element from the page and also 
+            deletes the space of that element from the page. */
+            /* display: none; */
+            /* Visibility hidden property will delete the element from the 
+            page but the space of that element will be occupied. */
+            visibility: hidden;
+            
+
         }
     </style>
 </head>
-
 <body>
-    <div class="box">
+    <div class="box box1">
         I am a box.
     </div>
+    <div class="box">also a nice box.</div>
+    <span>I am a good</span>
+    <span>Girl</span>
 </body>
 
 </html>
