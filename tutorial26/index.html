@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Property</title>
+</head>
+<style>
+    .box{
+        width: 30vw;
+        height: 10vh;
+        border: 2px solid black;
+        /* It will show a scroll bar and the content will not overflow now. */
+        /* overflow: scroll; */
+        /* It will show the scroll bar if the content is more otherwise not. */
+        /* overflow: auto; */
+        /* It will take the horizontal space totally and text will not go vertically. */
+        /* white-space: nowrap; */
+        /* It will show dots in place of the overflow text. */
+        /* text-overflow: ellipsis; */
+        /* It will hide the overflow content. */
+        /* overflow: hidden; */
+        /* It will not  even show programatically scrolling. */
+        /* overflow: clip; */
+        /* We can individually set overflow property to x and y direction. */
+        /* overflow-x: hidden; */
+        /* overflow-y: scroll; */
+        /* We can use shorthand for this property. */
+        overflow: hidden scroll;
+    }
+</style>
+
+<body>
+    <div class="box">I am a good girl and I love to write Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Illum voluptatibus aspernatur quisquam? Nulla voluptate veritatis rerum dolorum magnam nihil sit qui provident
+        inventore repudiandae dolores omnis ratione quisquam atque sunt, est, totam nobis commodi fugiat nam? Dolorum
+        tenetur officiis, iste veritatis laudantium provident tempore nobis!</div>
+</body>
+
+</html>
