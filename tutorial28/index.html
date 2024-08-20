@@ -53,10 +53,18 @@
 
         
         .parent{
+            /* transform, filter or perspective properties can also make an element appear as positioned. */
+            /* When a child element check whether parent is positioned(position something other than static) then it will 
+            show positioned if there is transform, filter or perspective property is applied, even if position is static.
+            It can create errors. It is an exception. */
             padding: 43px;
             margin: 34px;
             border: 3px solid purple;
             /* position: absolute; */
+            transform: translate(0); 
+            /* By adding this transform property it will apeared to it's child as positioned element, even though it is static.
+            Now the child of this element will fix it's property according to it's parent because the child will 
+            see this element as positioned. */
         }
     </style>
 </head>
