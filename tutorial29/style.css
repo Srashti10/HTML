@@ -1,0 +1,64 @@
+.main{
+    display: flex;
+    justify-content: center;
+}
+.parent{
+    width: 30vw;
+    height: 90vh;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(238, 247, 247, 0.884);
+    border-radius: 20px;
+    
+}
+.image{
+    display: flex;
+    justify-content: center;
+}
+.mainimage{
+    height: 50%;
+    width: 100%;
+    border-radius: 20px;
+}
+.spanparent{
+    margin: 30px 10px;
+}
+.nature{
+    /* margin: 10px 0px ; */
+    padding: 5px 10px;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+.lake{
+    padding: 5px 10px;
+    color: gray;
+    border: 1px solid gray;
+    border-radius: 30px;
+    margin-left: 20px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.heading{
+    margin: 10px;
+}
+.para{
+    line-height: 2;
+    font-size: larger;
+    font-weight: bold;
+    margin: 10px;
+    color: gray;
+}
+.button{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.mainbutton{
+    padding: 15px 30px;
+    border: 1px solid lightblue;
+    background-color: lightblue;
+    border-radius: 25px;
+    color: rgb(15, 60, 119);
+}
