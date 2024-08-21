@@ -1,10 +1,40 @@
+/* For global variables, we use root. The variables inside the root can be used 
+anywhere in the website. We set two values here, one for color and other for 
+secondary color. Now we can use use this wherever we want and how many times 
+we want. If we want to change, then we can change once in the gloval variable
+then it will change everywhere, where we use these variables in the webpage.
+We can use any property as variables in CSS then can use it anywhere in our page. */
+:root{
+    --color: blue;
+    --seccolor: rgb(81, 81, 233);
+    --defpad: 23px;
+    /* variable for default padding. */
+    /* --tercolor: purple; */
+}
 *{
     margin: 0;
     padding: 0;
 }
 .nav{
-    background-color: rgb(17, 212, 60);
+    /* If the variable is not found, then it will use color green. If tercolor 
+    variable is present then it will adapt the color of that variable. */
+    background-color: var(--tercolor,green);
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+    padding: var(--defpad);
+    border: 2px solid var(--seccolor);
+}
+ul li:first-child{
+    /* Here we declare color variable locally. So it will change the color 
+    only for this block. Any other place if we use the color variable
+    then it will use the color which is declared in root. */
+    --color: rgb(240, 150, 16);
+    background-color: var(--color);
 }
 .container{
-    background-color: rgb(131, 247, 156);;
+    background-color: var(--seccolor);
 }
