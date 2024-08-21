@@ -12,6 +12,13 @@
     /* It will change the background color blue if the width of the device is less than or equal to 455px.
     If we give min-width instead of max-width then it will change the body color only if the width of the device is more
     than 455px */
+    /* When width is more than height orientation will be landscape, otherwise it will be potrait.
+    Below media query will create a border if it is in landscape otherwise not. */
+    @media only screen and (orientation: landscape){
+        body{
+            border: 2px solid purple;
+        }
+    }
     @media only screen and (max-width: 455px){
         body{
             background-color: blue;
@@ -20,7 +27,6 @@
             flex-direction: column;
         }
     }
-
     .boxes{
         display: flex;
     }
