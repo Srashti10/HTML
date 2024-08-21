@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+</head>
+<style>
+    body{
+        background-color: red;
+    }
+    /* It will change the background color blue if the width of the device is less than or equal to 455px.
+    If we give min-width instead of max-width then it will change the body color only if the width of the device is more
+    than 455px */
+    @media only screen and (max-width: 455px){
+        body{
+            background-color: blue;
+        }
+        .boxes{
+            flex-direction: column;
+        }
+    }
+
+    .boxes{
+        display: flex;
+    }
+
+    .box{
+        width: 344px;
+        height: 344px;
+        background-color: steelblue;
+        padding: 3px;
+        margin: 3px;
+    }
+    /* @media only screen means we want these styles only when the device is screen.
+    @media not screen means we want these styles when device is any other device than screen. */
+    /* screen keyword is used to target device like phone, laptop, computer etc.
+    we can use it for other devices also such as all(for all devices), print(for devices like printers), speech(the devies 
+    used for people who can't see.).  */
+    /* Syntax of media query */
+    /* @media not/only mediatype and 
+    (expressions){
+    CSS-Code;
+    } */
+</style>
+<body>
+    <!-- For making our website responsive and attractive on mobile as well, we have to write some extra code which is 
+     media query. -->
+    <!-- We can change our styles based on the device you are using with the help of media query. -->
+    <div>
+        Hi! I am red body guy.
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
