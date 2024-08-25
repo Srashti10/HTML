@@ -1,0 +1,19 @@
+.cards{
+    border: 2px solid black;
+    display: flow-root;
+    /* It will prevent the content inside the cards to overflow. The parent container will adjust its heightand width 
+    according to the content. */
+}
+img{
+    /* float: right; */
+    float: left;
+    /* It will shift the image in the left corner of the screen and allow the other content in the right side of the image. */
+}
+.card{
+    border: 2px solid red;
+}
+.card:nth-child(3){
+    background-color: aqua;
+    clear: left;
+     /* It will not allow any content in the left side. We can clear left, right and both. */
+}
