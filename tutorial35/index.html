@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* If box is a forst child of it's parents. */
+        /* .box:first-child {
+            background-color: red;
+        } */
+
+        /* It will make the first line's background color yellow that appears on the screen according to width of your screen. */
+        /* .box:first-line {
+            background-color: yellow;
+        } */
+
+        /* It will select all the children of the boxes. */
+        .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+
+        /* Attribute Selector */
+        /* It will select the element where the attribute data-color is given value primary. */
+        [data-color="primary"]{
+            padding-top: 45px;
+        }
+        /* Grouping of Selectors */
+        /* we can apply same property to more than one selectors by grouping them. */
+        p,a,.box{
+            padding-bottom: 45px;
+        }
+
+        /* If the child is even then these properties will apply. */
+        .box:nth-child(even){
+            background-color: rgb(250, 137, 216);
+        }
+
+        /* It is used for numbering of child from the last. */
+        .box:nth-last-child(1){
+            background-color: aqua;
+        }
+
+        /* Pseudo Elements. */
+        /* It will add some content before the boxes. With the help of this we can dynamically insert content,
+        with the help of CSS. */
+        .boxes::before{
+            content: "Harry is good.";
+            color: red;
+        }
+        /* It will add content after the boxes. */
+        .boxes::after{
+            content: "Sigma course is also good.";
+            color: blue;
+        }
+
+        /* If we select anything from the page then selected part will show these properties. */
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+
+        /* It will select the first letter from the box. */
+        .box::first-letter{
+            color: peru;
+            font-size: 40px;
+        }
+
+        /* We can target the placeholder of the input. */
+        input::placeholder{
+            color: rgb(34, 34, 65);
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hi, I am first box.</div>
+        <div class="box">Hi, I am a box.</div>
+        <div class="box">Hi, I am a box.</div>
+        <input type="text" placeholder="Type your name here.">
+    </div>
+</body>
+
+</html>
