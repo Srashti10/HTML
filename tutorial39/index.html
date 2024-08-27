@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            border: 2px solid rgb(19, 19, 6);
+            display: grid;
+
+            /* For creating columns and rows of the grid. */
+            grid-template-columns: [pehla] 120px [doosra] 100px [teesra];
+            /* It will create two columns one with width 120px and other with width 100px. 
+            The name of first vertical line will be pehla and the name of second vertical line will be doosra 
+            and third vertical line will be named as teesra.*/
+            grid-template-rows: 100px 100px 100px;
+            /* It will create three rows with height 100px each. */
+
+        }
+        .item{
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+        }
+        .item-4{
+            /* With the help of grid-row and grid-column we can set the position of the particular item inside the grid. */
+            grid-row:1/2 ;
+            /* Above property says that item-4 will start from row 1 and end at start of row 2. */
+            grid-column: 1/2;
+            /* Above property says that item-4 will start from column 1 and end at column 2.
+            Basically this item will occupy the first cell of the grid. */
+
+            /* We can give seperately the start and end values. */
+            /* grid-row-start: 1;
+            grid-row-end: 2; */
+
+            /* We can also use the names of the line that we have assigned while creating the rows and columns. */
+            /* grid-column: pehla/doosra; */
+        }
+        /* We can overlap two items by giving the same grid-row and grid-column value. */
+        .item-1{
+            /* With the help of grid-row and grid-column we can set the position of the particular item inside the grid. */
+            grid-row:1/2 ;
+            /* Above property says that item-4 will start from row 1 and end at start of row 2. */
+            grid-column: 1/2;
+            /* Above property says that item-4 will start from column 1 and end at column 2.
+            Basically this item will occupy the first cell of the grid. */
+        }
+    </style>
+</head>
+<body>
+    <!-- This is one way to use CSS Grid. -->
+
+    <!-- In we can define number of columns and rows. We can place any item of the grid at any place we want. -->
+    <!-- Grid Line is the line dividing the items of the grid cells. -->
+    <!-- Grid cell is the one particular cell of the entire grid. -->
+    <!-- Grid track is the space between any the two grid lines. -->
+    <!-- Grid are is any area inside the grid.
+    For example, the area between two horizontal and two vertical lines is grid area. -->
+    <!-- We give numbering to the horizontal and vertical lines. -->
+    <!-- We can also give names to the horizontal and vertical lines.
+    Such as, row 1 start, row 1 end, third line , last line etc. -->
+
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>
