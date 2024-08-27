@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid-2</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: grid;
+            grid-template-areas: "nav nav nav";
+            /* It will make three columns, and these three columns will form one nav area. */
+        }
+    </style>
+</head>
+<body>
+    <!-- The second method is to give the name of the area of the grid. And then adjust the item according to the area. -->
+    <!-- The first thing we have to do is to set display grid to the container. -->
+     <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+     </div>
+</body>
+</html>
