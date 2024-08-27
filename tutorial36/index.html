@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 4 Solution</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        :root{
+            --primary-color: rgb(170, 27, 175);
+            --text-color: rgb(242, 243, 248);
+            --secondary-color: rgb(231, 133, 222);
+        }
+        /* :root{
+            --primary-color: rgb(80, 158, 247);
+            --text-color: rgb(242, 243, 248);
+            --secondary-color: rgb(167, 203, 243);
+        } */
+        body{
+            background-color: var(--secondary-color);
+        }
+        nav{
+            background-color: var(--primary-color);
+            padding: 12px 0;
+        }
+        ul li{
+            list-style: none;
+            display: inline;
+            padding: 23px;
+            font-weight: bolder;
+            
+        }
+        ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <!-- Harry's Solution  -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact Us</a></li>
+                
+            </ul>
+        </nav>
+    </header>
     
 </body>
 </html>
