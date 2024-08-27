@@ -79,10 +79,11 @@
     parent and maintain a 5px distance, but the parent should not have position static. In case the parent is static then
     it will go to it's grand-parent. It will repeat the same until a non-static parent is found or there is not any element
     above that.  -->
-    <!-- If we fix position: fixed then it will fix at that place and will not move from it's place even if the content of the 
+    <!-- If we apply position: fixed then it will fix at that place and will not move from it's place even if the content of the 
     page is scrolled. -->
     <!-- When we apply position sticky to an element it will stick to it's place, and content of the page scroll about this element.
-    Just like the nav-bar sticks at the top in the web pages. -->
+    Just like the nav-bar sticks at the top in the web pages. We need to give top=0 for content to stick on the top.
+    and bottom=0 for content to stick at the bottom. -->
     <div class="parent">
         <div class="box1 box"></div>
         <div class="box2 box"></div>
