@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            /* for horizontal alignment. */
+            justify-content: center;
+            /* there is no justify items in flexbox. */
+            /* for vertically alignment */
+            align-items: center;
+
+            /* if there are more than one row of items then we will
+            use align-content property to align all the rows. */
+            /* align-content: center; */
+
+            /* for changing the direction of flex items. */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+            /* for adjusting the items if it is hardly fitting  
+             in the container. */
+             /* It will display the items in next line if it 
+             is difficult to adjust in single line. */
+            /* flex-wrap: wrap; */
+            /* flex-wrap: wrap-reverse; */
+
+            /* we can set two properties flext direction and flex 
+            wrap together by using flex-flow property. */
+            /* it will set the flex direction to row and flex wrap 
+            to wrap. */
+            /* flex-flow: row wrap; */
+        }
+        .item{
+            height: 32px;
+            width: 32px;
+            border: 2px solid black;
+            margin: 4px;
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <!-- Direction of the flex means, in which direction the align-items
+    are laying, by default it is from left to right. But 
+    we can change it from top to bottom, by using flex- 
+    direction = coulmn. -->
+    <!-- The direction in which items are laying are main axis
+    and the other direction which is perpendicular to main 
+    axis is cross axis. -->
+    <!-- justify-content and align-items property works 
+    according to main axis. If the flex direction is row
+    then main axis is horizontal and if we do justify-content
+    center or align-items center then it will make items
+    center according to row. -->
+    <main>
+        <div class="container">
+            <!-- We can create these 5 item by using div.item*5 -->
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+        </div>
+    </main>
+</body>
+</html>
