@@ -7,6 +7,8 @@
     <style>
         .container{
             border: 2px solid red;
+
+            /* flex property of container */
             display: flex;
             height: 80vh;
             /* for horizontal alignment. */
@@ -35,6 +37,13 @@
             /* it will set the flex direction to row and flex wrap 
             to wrap. */
             /* flex-flow: row wrap; */
+
+            /* To give gap horizontally and vertically between the 
+            items we use gap property. It will set the gap of 30px
+            between the items horizontally and vertically both. */
+            /* gap: 30px; */
+            /* We can use row-gap and column-gap seperately to give 
+            the different values in row and column. */
         }
         .item{
             height: 32px;
@@ -42,6 +51,27 @@
             border: 2px solid black;
             margin: 4px;
             background-color: violet;
+
+            /* flex property of items */
+            /* by default flex-grow is 0. */
+            /* more the value of flex grow,more will be the space occupied by the items. */
+            /* flex-grow: 1; */
+        }
+        .item1{
+            /* if flex-grow: 1; takes space of 10 px then flex-grow: 2; will take the space of 20px. */
+            /* flex-grow: 2; */
+            /* flex-shrink is  the ability of flex item to shrink if necessary. */
+            /* if flex-shrink is 2 then the item will shrink upto half if needed. */
+            /* flex-shrink: 2; */
+
+            /* for the alignment of single item of the flex. */
+            align-self: flex-end;
+        }
+
+        /* the element with less value of order will come
+        before the element with high value of the order. default order is 0. */
+        .order1{
+            order: 10;
         }
     </style>
 </head>
@@ -61,7 +91,7 @@
     <main>
         <div class="container">
             <!-- We can create these 5 item by using div.item*5 -->
-            <div class="item">1</div>
+            <div class="item item1 order1">1</div>
             <div class="item">2</div>
             <div class="item">3</div>
             <div class="item">4</div>
