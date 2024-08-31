@@ -6,17 +6,28 @@
     <title>CSS Grid-1</title>
     <style>
         .container{
+            width: 80vw;
+            height: 100vh;
             border: 2px solid rgb(19, 19, 6);
             display: grid;
-
             /* For creating columns and rows of the grid. */
-            grid-template-columns: [pehla] 120px [doosra] 100px [teesra];
+            /* grid-template-columns: [pehla] 120px [doosra] 100px [teesra]; */
             /* It will create two columns one with width 120px and other with width 100px. 
             The name of first vertical line will be pehla and the name of second vertical line will be doosra 
             and third vertical line will be named as teesra.*/
-            grid-template-rows: 100px 100px 100px;
+            /* grid-template-rows: 100px 100px 100px; */
             /* It will create three rows with height 100px each. */
-
+            grid-template-columns: 1fr 1fr 1fr;
+            /* fr is an unit which is specifically used in grid. 1 fr means 1 fraction of the available width.
+            Here 1 fr is written 3 times which means three columns will be created with one-third width each.
+            We can adjust the width of the columns, if we give 2fr then it will take the 2fraction of the available width.*/
+            /* gap: 34px; */
+            row-gap: 20px;
+            column-gap: 44px;
+            /* It will give a gap between the items of the container. We use gap instead of padding in flex and grid. */
+            justify-items: center;
+            align-items: center;
+            /* Items will get centered in it's cell. */
         }
         .item{
             border: 2px solid red;
@@ -25,9 +36,9 @@
         }
         .item-4{
             /* With the help of grid-row and grid-column we can set the position of the particular item inside the grid. */
-            grid-row:1/2 ;
+            /* grid-row:1/2 ; */
             /* Above property says that item-4 will start from row 1 and end at start of row 2. */
-            grid-column: 1/2;
+            /* grid-column: 1/2; */
             /* Above property says that item-4 will start from column 1 and end at column 2.
             Basically this item will occupy the first cell of the grid. */
 
@@ -41,9 +52,9 @@
         /* We can overlap two items by giving the same grid-row and grid-column value. */
         .item-1{
             /* With the help of grid-row and grid-column we can set the position of the particular item inside the grid. */
-            grid-row:1/2 ;
+            /* grid-row:1/2 ; */
             /* Above property says that item-4 will start from row 1 and end at start of row 2. */
-            grid-column: 1/2;
+            /* grid-column: 1/2; */
             /* Above property says that item-4 will start from column 1 and end at column 2.
             Basically this item will occupy the first cell of the grid. */
         }
