@@ -8,20 +8,44 @@
         .container{
             border: 2px solid black;
             display: grid;
-            grid-template-areas: "nav nav nav";
+            grid-template-areas: "nav nav nav"
+                                  "side article article"
+                                  "footer footer footer";
             /* It will make three columns, and these three columns will form one nav area. */
         }
+        .item{
+            border: 2px solid red;
+            height: 55px;
+            /* width: 55px; */
+        }
+        .item-1{
+            grid-area: nav;
+            background-color: rgb(157, 173, 173);
+        }
+        .item-2{
+            grid-area: side;
+            background-color: rgb(248, 248, 22);
+        }
+        .item-3{
+            grid-area: article;
+            background-color: rgb(57, 173, 173);
+        }
+        .item-4{
+            grid-area: footer;
+            background-color: rgb(238, 102, 102);
+        }
+        
     </style>
 </head>
 <body>
     <!-- The second method is to give the name of the area of the grid. And then adjust the item according to the area. -->
     <!-- The first thing we have to do is to set display grid to the container. -->
      <div class="container">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
      </div>
 </body>
 </html>
