@@ -21,6 +21,11 @@
             /* fr is an unit which is specifically used in grid. 1 fr means 1 fraction of the available width.
             Here 1 fr is written 3 times which means three columns will be created with one-third width each.
             We can adjust the width of the columns, if we give 2fr then it will take the 2fraction of the available width.*/
+            /* We can use repeat function to create multiple columns. */
+            /* grid-template-columns: repeat(3, 1fr); */
+            /* grid-template-columns: repeat(4,minmax(100px,1fr)); */
+            /* It will for sure give a minimum width of 100px, even if 1fr is less than 100px otherwise it will take 1fr.
+            minimum width will be 100px and max will be 1fr.  */
             /* gap: 34px; */
             row-gap: 20px;
             column-gap: 44px;
@@ -28,6 +33,7 @@
             justify-items: center;
             align-items: center;
             /* Items will get centered in it's cell. */
+            /* justify content and align content is used only when */
         }
         .item{
             border: 2px solid red;
@@ -35,6 +41,9 @@
             width: 55px;
         }
         .item-4{
+            /* We can set align self and justify self property to particular item in the self. */
+            align-self: flex-start;
+            justify-self: end;
             /* With the help of grid-row and grid-column we can set the position of the particular item inside the grid. */
             /* grid-row:1/2 ; */
             /* Above property says that item-4 will start from row 1 and end at start of row 2. */
