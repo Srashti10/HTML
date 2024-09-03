@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform: rotate(45deg); */
+            /* It will rotate the box by 45 degrees. */
+            /* transform: rotate(0.5turn); */
+            /* It will rotate the box by 180 degrees, 1 turn 
+            is equals to 360 degees. */
+            /* transform: rotateX(45deg); */
+            /* It will rotate on x-axis by 45 degrees. */
+            /* transform: rotateY(45deg); */
+            /* It will rotate on y-axis by 45 degrees. */
+            /* transform: rotateZ(45deg); */
+            
+
+            /* transform: scale(1.5); */
+            /* The box will become 1.5 larger than the original box. */
+            /* transform: scaleX(2); */
+            /* transform: scaleY(2); */
+            /* transform: scaleZ(2); */
+
+
+            /* transform: skew(5deg); */
+            /* transform: skewX(10deg); */
+            /* transform: skewY(10deg); */
+            /* Skew will not work in z-axis. */
+
+
+            /* transform: translate(34px); */
+            /* It will move forward from it's original position by 34px. */
+            /* transform: translate(50%); */
+            /* It will transform by the 50% of the width of the box. */
+            /* transform: translateX(100%); */
+            /* transform: translateY(100%); */
+            /* transform: translateZ(100%); */
+
+
+            /* Sometimes we want to give more than one transform properties.  */
+            /* transform: translateX(45%) skew(10deg) translateY(100%); */
+
+
+            /* We can make the box invisible. */
+            /* transform: translate(-100%); */
+
+/* 
+            transform: rotate(55deg);
+            transform-origin: -50% -50%;
+            It will set the point at which the rotation happens. */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>
