@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+            background-color: rgb(9, 106, 106);
+            height: 80vh;
+            width: 30vw;
+        }
+        .box{
+            width: 34px;
+            height: 45px;
+            background-color: aqua;
+            /* animation: harryKaAnimation; */
+            /* animation-duration: 3s; */
+            /* animation-iteration-count: 2; */
+            /* animation-iteration-count: infinite; */
+            /* animation will run only for two times. */
+            /* We can also give count as infinite. */
+            /* animation-timing-function: ease-out;
+            animation-delay: 1s; */
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate-reverse; */
+            /* it will set the direction of the animation. */
+            /* animation-play-state: paused; */
+            /* we can have control for the running state of the animation. */
+            /* animation-fill-mode: forwards;
+            It will retain the final property of the box. not come back to 
+            it's original position. */
+            /* If we set it to backward thenit will come back to it's 
+            original position. */
+
+
+            /* there is a shorthand for all the properties of the animation. */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: harryKaAnimation 3s ease-in-out 1s 1 alternate-reverse forwards , harry2 3s ease-in-out 1s 1;
+            /* We can give multiple animations by using comma. */
+
+        }
+
+        /* For using animation we will use keyframes keyword. */
+        /* And we can give any name to our animations, here the 
+        name of animation is harryKaAnimation. */
+        @keyframes harryKaAnimation {
+            from{
+                background-color: red;
+            }
+            to{
+                transform: translateX(1000px);
+                background-color: yellow;
+            }
+        }
+
+        @keyframes harry2 {
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            50%{
+                transform: rotate(220deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(310deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
