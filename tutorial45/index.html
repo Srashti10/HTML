@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition Property</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            width: 50vw;
+            height: 40vh;
+        }
+        .box{
+            background-color: aquamarine;
+            width: 5vw;
+            height: 4vh;
+            /* transition-property: transform ;
+            (transition property will be applied on transform.)
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            (We can make our own function just as ease in out for the flow of animation.)
+            transition-delay: 1s; */
+            /* We can use short-hand for above 4 properties. */
+            transition: transform 3s ease-in-out 1s;
+        }
+        .translate{
+            transform: translateX(10vw) translateY(10vh); 
+        }
+    </style>
+</head>
+<body>
+    <!-- Transition means going from one state to another. -->
+     <div class="container">
+        <div class="box translate"></div>
+     </div>
+</body>
+</html>
