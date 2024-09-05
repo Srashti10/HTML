@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Object-fit and Object-position</title>
+    <style>
+        .container{
+            height: 488px;
+            width: 466px;
+            border: 2px solid black;
+            background-color: azure;
+        }
+        img{
+            width: 466px;
+            height: 488px;
+            object-fit: cover; 
+            /* If we set object fit to cover then it will adjust it's aspect ratio to maintain the width and height that is 
+            given to it. For that the image may cut itself.  */
+
+            /* object-fit: contain; */
+            /* If we set object fit to contain, then the image will not cut itself and show it fully without disturbing it's 
+            aspect ratio. It will leave the extra space in the container. */
+
+            /* object-position: top right; */
+            /* When the image cuts itself, we can select which part of the picture to diplay, here we are showing top right
+            of the picture. */
+
+            object-position: 10px 20px;
+            /* We can also set some space around the image by object position property. */
+
+            /* object-position: 50% 50%; */
+            /* We can also use % value in object position. Above property will show the center part of the image.*/
+
+            /* By default the object fit is set to fill, it will set according to the given width and height but it will not
+            maintain the aspect ratio of the image. */
+            /* object-fit: scale-down;
+            It will decrease the size of the image. */
+
+            
+
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.8VfFi4-4n4g8iFk6m6OunwHaD4&pid=Api&P=0&h=220" alt="">
+    </div>
 </body>
 </html>
