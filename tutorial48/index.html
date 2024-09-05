@@ -14,7 +14,7 @@
             position: absolute;
             bottom: 0;
             left: 0; 
-            animation: X-Direction 4s ease-in-out 1s 4 ;
+            animation: Y-Direction 4s ease-in-out 1s INFINITE ;
         }
 
         .container {
@@ -45,17 +45,13 @@
             0%{
                 transform: translateY(0px);
             }
-            25%{
-                transform: translateY(-300px);
-            }
+            
             50%{
-                transform: translateY(-600px);
-            }
-            75%{
-                transform: translateY(300px);
-            }
+                transform: translateY(-300px);
+            } 
+            
             100%{
-                transform: translateY(600px);
+                transform: translateY(0px);
             }
         }
  
