@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        img{
+            /* filter: blur(10px); */
+            /* It is used to make the image blur. */
+            width: 500px;
+        }
+        .img1{
+            filter: brightness(122%);
+            /* It will adjust the brightness of the image. */
+            filter: contrast(60%);
+            /* It will adjust the contrast of the image. */
+
+            /* We can use more than property together. */
+            /* filter: brightness(122%) contrast(60%); */
+        }
+        .img2{
+            /* filter: invert(1); */
+            /* It will convert into a negative image. */
+            filter: opacity(0.5);
+            /* If the opacity is 0 then the image will disappear, and if the opacity is 1 then will perfectly appear. */
+        }
+        .img3{
+            /* filter: grayscale(100%); */
+            /* If we give grayscale 100%, then the image will become black and white. */
+            filter: sepia(100%);
+            /* It will give a specific filter to the image. */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="https://tse2.mm.bing.net/th?id=OIP.t57OzeATZKjBDDrzXqbc5gHaE7&pid=Api&P=0&h=220" alt="">
+        <img class="img2" src="https://images.mid-day.com/images/images/2023/feb/khan-srksas_d.jpg" alt="">
+        <img class="img3" src="https://tse4.mm.bing.net/th?id=OIP.OVdMCBW7b0KAlFe2hxPxDwHaF7&pid=Api&P=0&h=220" alt="">
+    </div>
+</body>
+</html>
