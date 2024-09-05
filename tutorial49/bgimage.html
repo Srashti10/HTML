@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Background Property</title>
+    <style>
+        .container{
+            height: 488px;
+            width: 466px;
+            border: 2px solid black;
+            background-image: url("https://tse2.mm.bing.net/th?id=OIP.tLotgCDtzgTdwJcTiXWRCwHaEK&pid=Api&P=0&h=220");
+            background-position: top right;
+            background-position: center center;
+            /* It will center the image in the container. */
+            /* We can show which part of image to display by using background position property. */
+            background-repeat: repeat;
+            /* It will repeat the image in both x and y direction. */
+            background-repeat: repeat-x;
+            /* Repeat only in x-axis. */
+            background-repeat: repeat-y;
+            /* Repeat only in y-axis. */
+            background-repeat: no-repeat;
+            /* Not repeat in any direction. */
+
+            /* background-clip: border-box; */
+            /* background-clip: padding-box; */
+            /* background-clip: content-box; */
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <!-- <img src="" alt=""> -->
+    </div>
 </body>
 </html>
